@@ -1,0 +1,140 @@
+body {
+    position: relative;
+    background: linear-gradient(to right, #e6e6fa, #dcdcdc); /* Lavender gradient */
+    background-image: url('to-do-list.png'); /* Background image */
+    background-size: cover; /* Makes the image cover the whole screen */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.header{
+    text-align: center;
+    font-size: 3.8vh;
+    padding: 20px;
+    color: #4b0082; /* Dark lavender text */
+}
+
+.container {
+    position: absolute;
+    background: rgba(228, 187, 238, 0.7); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 100px;
+}
+
+.bottom-left {
+    top: 720px;
+    left: 20px;
+}
+
+.bottom-right {
+    top: 620px;
+    right: 100px;
+}
+
+.center {
+    top: 350px;
+    left: 20px;
+}
+
+.add-todo {
+    position: absolute;
+    top: 506px;
+    left: 38%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-todo input,
+.add-todo button,
+.add-todo select {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+.add-todo input,
+.add-todo select {
+    background-color: #f0e6fa; /* Light lavender input background */
+    color: #4b0082; /* Dark lavender text */
+    border: 2px solid #dcdcdc; /* Light gray border */
+}
+
+.add-todo button {
+    background-color: #9370db; /* Medium lavender button */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.add-todo button:hover {
+    background-color: #8a2be2; /* Darker lavender on hover */
+    transform: scale(1.05);
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #4b0082; /* Dark lavender text for tasks */
+}
+
+.delete-btn {
+    border: none;
+    background-color: #ff6f61; /* Coral delete button */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ff4d4d; /* Darker coral on hover */
+}
+.date-time-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-time-container label {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #4b0082; /* Dark lavender text */
+}
+
+#date-time-input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0e6fa; /* Light lavender input background */
+    color: #4b0082;
+    font-size: .6em;
+}
